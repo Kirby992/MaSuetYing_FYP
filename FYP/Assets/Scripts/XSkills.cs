@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using static UnityEngine.GraphicsBuffer;
 
-public class Skills : MonoBehaviour
+public class XSkills : MonoBehaviour
 {
 
     [SerializeField] Button as1;
@@ -61,8 +61,8 @@ public class Skills : MonoBehaviour
 
     public IEnumerator ASkill2()
     {
-        Player heal = new();
-        heal.health += 10;
+        //Player heal = new();
+        //heal.health += 10;
 
 
         if (Input.GetKey(KeyCode.Keypad2) || Input.GetKey(KeyCode.Alpha2))
