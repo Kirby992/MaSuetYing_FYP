@@ -10,6 +10,7 @@ public class UIMenu : MonoBehaviour
     public void Starter(int sceneID)
     {
         SceneManager.LoadScene(sceneID);
+
     }
 
     public void How(int sceneID)
@@ -31,6 +32,7 @@ public class UIMenu : MonoBehaviour
     {
         Application.Quit();
     }
+
 
 
 
