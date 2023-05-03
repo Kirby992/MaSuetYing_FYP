@@ -66,7 +66,7 @@ public class EnemyA1 : MonoBehaviour
 
         if (!isGround)
         {
-            rb.AddForce(Vector3.down * 10);
+            rb.AddForce(Vector3.down * 50);
         }
 
         if (target == null)

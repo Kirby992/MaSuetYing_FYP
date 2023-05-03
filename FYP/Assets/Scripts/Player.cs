@@ -36,7 +36,7 @@ public class Player : MonoBehaviour
     [SerializeField] GameObject[] targets;
 
     [SerializeField] bool isGrounded;
-    [SerializeField] bool enemyInRange;
+    [SerializeField] bool enemyInRange = false;
     EnemyA1 EnemyA1;
     EnemyA2 EnemyA2;
     //EnemyB1 EnemyA3;
@@ -158,6 +158,8 @@ public class Player : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
+            enemy = null;
+            closest = null;
             enemyInRange = false;
         }
     }
