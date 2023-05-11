@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1261711472918058506}
   - component: {fileID: 1261711472918058507}
   - component: {fileID: -4410683532515742544}
+  - component: {fileID: 752803427731060688}
   - component: {fileID: 1792651006}
   - component: {fileID: 306322324}
   m_Layer: 0
@@ -32,6 +33,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 12.4}
   m_LocalScale: {x: 1.7336, y: 1.7336, z: 1.7336}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -115,7 +117,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 10
   m_CollisionDetection: 0
---- !u!114 &1792651006
+--- !u!114 &752803427731060688
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -123,6 +125,40 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1261711472918058508}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe532dd8012d7e143ad1817c4641e936, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
+  maxHealth: 5
+  souls: 5
+  arange: 5
+  aspeed: 5
+  speed: 10
+  respeed: 10
+  attack: 2
+  reattack: 2
+  selfPosition: {x: 0, y: 0, z: 0}
+  distanceDifference: {x: 0, y: 0, z: 0}
+  oldDistance: Infinity
+  currentDistance: 0
+  closest: {fileID: 0}
+  targetss: []
+  targetssaes: []
+  target: {fileID: 0}
+  player: {fileID: 0}
+  aes: {fileID: 0}
+  timer: 0
+  inRange: 0
+  isGround: 0
+--- !u!114 &1792651006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261711472918058508}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9eeed946caa910c4589708b693a28381, type: 3}
   m_Name: 

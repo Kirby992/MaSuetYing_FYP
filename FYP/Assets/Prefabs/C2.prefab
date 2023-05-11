@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4282194430164123423}
   - component: {fileID: 4282194430164123422}
   - component: {fileID: -3940838440825054664}
+  - component: {fileID: -5774068413338385533}
   m_Layer: 0
   m_Name: C2
   m_TagString: Untagged
@@ -115,3 +116,37 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-5774068413338385533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4282194430164123421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe532dd8012d7e143ad1817c4641e936, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  souls: 50
+  speed: 40
+  attack: 5
+  aspeed: 0.05
+  arange: 5
+  maxHealth: 20
+  health: 0
+  respeed: 0
+  reattack: 0
+  selfPosition: {x: 0, y: 0, z: 0}
+  distanceDifference: {x: 0, y: 0, z: 0}
+  oldDistance: Infinity
+  currentDistance: 0
+  closest: {fileID: 0}
+  targetss: []
+  targetssaes: []
+  target: {fileID: 0}
+  player: {fileID: 0}
+  aes: {fileID: 0}
+  timer: 0
+  inRange: 0
+  isGround: 0
